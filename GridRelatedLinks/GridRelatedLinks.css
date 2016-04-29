@@ -1,0 +1,139 @@
+﻿.id-modified-related-links table,
+.id-modified-related-links table tbody,
+.id-modified-related-links table tfoot,
+ {
+    display: block;
+    width: 100%;
+}
+
+.id-modified-related-links table tbody:not(:empty) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.id-modified-related-links table tr {
+    display: block;
+}
+
+.id-modified-related-links table :not(tfoot) tr {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.id-modified-related-links table :not(tfoot) tr:not(:first-child) {
+    border-top: 1px solid #dbdbdb;
+}
+
+.id-modified-related-links table td {
+    display: block;
+    border: none;
+    clear: both;
+    overflow: hidden;
+    font-size: 90%;
+    min-width: inherit !important;
+}
+
+.id-modified-related-links table td div {
+    float: left;
+    width: 100%;
+}
+
+.id-modified-related-links table thead {
+    display: none;
+}
+
+.id-modified-related-links table td.col-sort {
+    position: absolute;top: 0;left: 0;
+}
+
+.id-modified-related-links table tbody td.edit.col-newwindow:before,
+.id-modified-related-links table tfoot td.col-caption:before {
+    /* content: attr(data-title) ": "; */
+    float: left;
+    padding: 0 10px 0 0;
+    display: block;
+}  
+
+.id-modified-related-links table tfoot td.col-caption:before {
+    padding-top: 5px;
+}     
+  
+.id-modified-related-links table tbody td.edit.col-newwindow:before,
+.id-modified-related-links table tfoot td.col-newwindow:before {
+    content: attr(data-title);
+    padding-right: 10px;
+}  
+
+.id-modified-related-links table tbody tr.edit td.col-newwindow,
+.id-modified-related-links table tbody tr.edit td.col-actions,
+.id-modified-related-links table tbody tr.edit td.col-actions > div,
+.id-modified-related-links table tfoot td.col-newwindow,
+.id-modified-related-links table tfoot td.col-actions {
+    float: left;
+    min-width: 40px;
+    clear: none;
+    width: auto;
+}
+
+.id-modified-related-links table tfoot td.col-newwindow {
+    padding-top: 12px;
+    padding-bottom: 6px;
+}
+
+.id-modified-related-links table td a {
+    color: #2e8aea;
+}
+
+.id-modified-related-links table tbody tr td.col-caption {
+    padding-left: 40px;
+}
+.id-modified-related-links table tbody tr:only-child td.col-caption {
+    padding-left: 10px;
+}
+.id-modified-related-links table tbody td.col-link    {
+
+}
+
+.id-modified-related-links table tbody tr td.edit.col-newwindow    {
+    position: static;
+    padding: 8px;
+}
+
+.id-modified-related-links table tbody tr td.col-newwindow    {
+    position: absolute;
+    bottom: 8px;
+    right: 18px;
+    padding: 0;
+}
+
+.id-modified-related-links table :not(tfoot) tr td.col-actions       {
+    display: none;
+    /*overflow: hidden;*/
+    /*z-index: 2;*/
+    /*padding: 0 8px;*/
+    /*opacity: 0;*/
+    /*height: 0;*/
+    /*background: #fff !important;*/
+    /*width: 100%;*/
+    /*-webkit-transition: all 0.3s;*/
+    /*-o-transition: all 0.3s;*/
+    /*transition: all 0.3s;*/
+}
+
+.id-modified-related-links table :not(tfoot) tr.edit td.col-actions,
+.-active > div > div > .id-modified-related-links table :not(tfoot) tr td.col-actions {
+    display: block;
+    padding: 9px;
+    height: auto;
+    opacity: 1;
+}
+
+.id-modified-related-links table.children tbody ~ tfoot {
+    display: none;
+}
+
+.-active > div > div > .id-modified-related-links table tbody:not(:empty) ~ tfoot {
+    display: block;
+}

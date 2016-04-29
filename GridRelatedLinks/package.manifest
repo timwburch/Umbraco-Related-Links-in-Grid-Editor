@@ -1,0 +1,16 @@
+{
+    "gridEditors": [
+        {
+            "name": "Link list",
+            "alias": "idrelatedlinks",
+            "view": "/app_plugins/GridRelatedLinks/GridRelatedLinksController.html",
+            "icon": "icon-thumbnail-list",
+            "config": {
+              "max": "10"
+            }
+        }
+    ],
+    javascript:[
+        "/app_plugins/GridRelatedLinks/GridRelatedLinks.controller.js"
+    ]
+}
