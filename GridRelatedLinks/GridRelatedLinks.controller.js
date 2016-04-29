@@ -11,11 +11,6 @@ angular.module("umbraco")
             };
 
             $scope.control.config.max = isNumeric($scope.control.config.max) && $scope.control.config.max !== 0 ? $scope.control.config.max : Number.MAX_VALUE;
-
-            //console.log('scope', $scope);
-            console.log('$rootScope', $rootScope);
-            console.log('$scope', $scope);
-            console.log('scope.control', $scope.control);
             
             $scope.newCaption = '';
             $scope.newLink = 'http://';
